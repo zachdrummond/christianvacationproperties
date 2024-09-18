@@ -127,31 +127,6 @@ const handleScrollEvents = () => {
 
 window.addEventListener("scroll", () => throttle(handleScrollEvents, 250));
 
-/*====================== EXPERIENCE =======================*/
-/*=== TABS ===*/
-const tabs = document.querySelectorAll("[data-target]"),
-  tabContents = document.querySelectorAll("[data-content]");
-
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    console.log("TAB", tab);
-    const target = document.querySelector(tab.dataset.target);
-    console.log("target", target);
-
-    tabContents.forEach((tabContent) => {
-      tabContent.classList.remove("experience_active");
-    });
-
-    target.classList.add("experience_active");
-
-    tabs.forEach((tab) => {
-      tab.classList.remove("experience_active");
-    });
-
-    tab.classList.add("experience_active");
-  });
-});
-
 /*========================= BUTTONS =========================*/
 /*=== DARK LIGHT THEME ===*/
 const themeButton = document.getElementById("theme-button");
@@ -187,41 +162,6 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
-});
-
-/*========================= PORTFOLIO =========================*/
-/*=== PORTFOLIO MODAL ===*/
-const learnMoreBtns = document.querySelectorAll(".portfolio_button"),
-  allModalContainers = document.querySelectorAll(".portfolio_modal"),
-  modalCloseBtns = document.querySelectorAll(".portfolio_modal_close");
-
-let modal = function (modalNumber) {
-  const openModal = allModalContainers[modalNumber];
-  openModal.classList.add("active-modal");
-
-  openModal.addEventListener("click", (event) => {
-    const isClickInsideOpenModal = openModal.firstElementChild.contains(
-      event.target
-    );
-
-    if (!isClickInsideOpenModal) {
-      openModal.classList.remove("active-modal");
-    }
-  });
-};
-
-learnMoreBtns.forEach((button, modalNumber) => {
-  button.addEventListener("click", () => {
-    modal(modalNumber);
-  });
-});
-
-modalCloseBtns.forEach((button) => {
-  button.addEventListener("click", () => {
-    allModalContainers.forEach((modalContainer) => {
-      modalContainer.classList.remove("active-modal");
-    });
-  });
 });
 
 /*========================= CONTACT =========================*/
