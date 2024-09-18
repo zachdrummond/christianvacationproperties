@@ -54,10 +54,6 @@
   .home_description {
     font-size: var(--font-size-md);
   }
-
-  .home_blob {
-    width: var(--spacing-45);
-  }
 }
 
 /*==================== MEDIUM DEVICES 1 ====================*/
@@ -113,10 +109,6 @@
     display: none;
   }
 
-  .home_blob {
-    width: var(--spacing-67);
-  }
-
   .home_title {
     font-size: var(--font-size-biggest);
   }
@@ -168,10 +160,6 @@
   .home_container {
     flex-direction: row-reverse;
     height: calc(100vh - var(--header-height));
-  }
-
-  .home_blob {
-    width: var(--spacing-90);
   }
 
   .social_links_container {

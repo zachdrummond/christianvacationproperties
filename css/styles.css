@@ -230,27 +230,10 @@
   flex-direction: column;
 }
 
-.home_blob {
-  width: var(--spacing-66);
-  fill: var(--ultramarine-color-base);
-}
-
-.home_blob_img {
-  width: var(--spacing-43);
-}
-
 .home_title {
   text-align: center;
   font-size: var(--font-size-bigger);
   font-weight: var(--font-weight-bold);
-}
-
-.home_wave {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
 }
 
 .home_description {
@@ -263,14 +246,6 @@
 
 #home_intro {
   display: none;
-}
-
-#job_link {
-  color: var(--job-link-color);
-}
-
-#job_link:hover {
-  color: var(--hover-color-crimsonSky);
 }
 
 /*==================== CONTACT ME ====================*/
