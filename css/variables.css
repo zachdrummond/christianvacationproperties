@@ -37,7 +37,7 @@
     --gray-color-800: hsl(var(--gray-hue-color), 0%, 13%); /* #212121 */
     --black-color-base: hsl(var(--gray-hue-color), 0%, 0%); /* #000000 */
 
-    --background-color: radial-gradient(var(--ultramarine-color-200), var(--ultramarine-color-300));
+    /* --background-color: ; */
     --ultramarine-color-base: var(--ultramarine-color-600);
     --ultramarine-color-second: var(--ultramarine-color-600);
     --crimsonSky-color-base: var(--crimsonSky-color-500);
