@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="css/animations.css"
+      media="(prefers-reduced-motion: no-preference)"
+    />
+    <!-- <link rel="stylesheet" href="css/debug.css" /> -->
+
+    <title>Zach Drummond | Software Engineer</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav_brand_container">
+          <a href="#" class="nav_brand"
+            >&lt;&nbsp;<span id="brandInitials">ZD</span>
+            <span id="brandName">Zach Drummond</span>&nbsp;/&gt;</a
+          >
+        </div>
+
+        <!--==================== Nav Menu ====================-->
+        <div class="nav_menu flex_center" id="nav-menu">
+          <ul class="nav_list flex_center">
+            <li class="nav_item">
+              <a href="#home" id="nav_home" class="nav_link active-link">
+                <i class="uil uil-estate nav_icon"></i> Home
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#experience" class="nav_link">
+                <i class="uil uil-briefcase-alt nav_icon"></i> Experience
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#portfolio" class="nav_link">
+                <i class="uil uil-scenery nav_icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="uil uil-message nav_icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
+        <div class="nav_extras_container">
+          <a
+            href="https://www.linkedin.com/in/zachdrummond/"
+            target="_blank"
+            class="nav_social_link"
+          >
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+          <a
+            href="https://github.com/zachdrummond"
+            target="_blank"
+            class="nav_social_link"
+          >
+            <i class="uil uil-github-alt"></i>
+          </a>
+
+          <!-- Theme Change Button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home_container flex_center container">
+          <!--==================== IMAGE ====================-->
+          <div>
+            <svg
+              class="home_blob"
+              viewBox="0 0 200 187"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <mask id="mask0" mask-type="alpha">
+                <path
+                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                />
+              </mask>
+              <g mask="url(#mask0)">
+                <path
+                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                />
+                <image
+                  class="home_blob_img"
+                  x="12"
+                  y="14"
+                  xlink:href="assets/img/NBCheadshot.png"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <!--==================== ABOUT ====================-->
+          <div>
+            <h1 class="home_title">
+              Hey, I'm Zach! <span class="home_wave">👋</span>
+            </h1>
+            <p class="home_description">
+              <span id="home_intro"
+                >Toward the end of 6 rewarding years of working in vocational
+                ministry, I started learning web development in order to build a
+                website for my church. Enthralled by the inner workings of the
+                world wide web, and while stuck at home during the COVID
+                pandemic, I launched my career to become a software engineer.
+                <br />
+                <br
+              /></span>
+              Currently, I work as a full-stack engineer at
+              <a
+                id="job_link"
+                href="https://www.nbcsportsnext.com/"
+                target="_blank"
+                ><strong>NBC Sports Next</strong></a
+              >. My team manages a server-side rendered frontend Angular
+              application on top of a headless Drupal content management system
+              with a GraphQL service layer.
+              <br />
+              <br />
+              In my spare time I like to study the Bible with
+              <a href="https://www.bibleproject.com/" target="_blank"
+                >BibleProject</a
+              >, make my daughter laugh, go on hikes with my wife, train my
+              Aussie, and bring people together with games and meaningful
+              conversation.
+            </p>
+            <div class="flex_center">
+              <a href="#contact" class="button button_flex">
+                <i class="uil uil-message button_icon_with_text"></i> Contact
+              </a>
+              <a
+                class="button button_flex"
+                role="button"
+                href="https://docs.google.com/document/d/1Lg_N5xJ_PITKCcIUaj6RQqQ6mVqgH2fbwWRqjNZHfrM/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="uil uil-file-download-alt button_icon_with_text"></i>
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== EXPERIENCE ====================-->
+      <section class="experience section" id="experience">
+        <h1 class="section_title">
+          <span class="section_title_text hide-for-animation">Experience</span>
+        </h1>
+
+        <!--==================== EXPERIENCE TABS ====================-->
+        <div class="container">
+          <div class="experience_tabs_container">
+            <!--==================== SKILLS TAB ====================-->
+            <div
+              class="experience_tab button_flex hide-for-animation experience_active"
+              data-target="#skills"
+            >
+              <i class="uil uil-wrench experience_icon"></i>
+              Skills
+            </div>
+
+            <!--==================== EDUCATION/WORK TAB ====================-->
+            <div
+              class="experience_tab button_flex hide-for-animation"
+              data-target="#educationWork"
+            >
+              <i class="uil uil-briefcase-alt experience_icon"></i>
+              Education & Work&nbsp;
+            </div>
+          </div>
+
+          <!--==================== EXPERIENCE SECTIONS ====================-->
+          <div class="experience_sections">
+            <!--==================== SKILLS ====================-->
+            <div id="skills" class="experience_active" data-content>
+              <div
+                class="skills_container hide-for-animation"
+                data-animation="slide-in-fwd"
+                data-scroll="70"
+              >
+                <!-- Row 1 -->
+                <div class="skills_info grid">
+                  <!-- Skill 1 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">HTML</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/HTML.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 2 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">CSS</h3>
+                    <div class="skills_blob">
+                      <img src="assets/img/skills/CSS.svg" alt="skills image" />
+                    </div>
+                  </div>
+
+                  <!-- Skill 3 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">Sass</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/Sass.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 4 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">Bootstrap</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/Bootstrap.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 5 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">Git</h3>
+                    <div class="skills_blob">
+                      <img src="assets/img/skills/Git.svg" alt="skills image" />
+                    </div>
+                  </div>
+
+                  <!-- Skill 6 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">Docker</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/Docker.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Row 2 -->
+                  <!-- Skill 7 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">JavaScript</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/JavaScript.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 8 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">TypeScript</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/TypeScript.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 9 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">Angular</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/Angular.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 10 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">React</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/React.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 11 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">Express</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/Expressjs.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 12 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">Node</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/Nodejs.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Row 3 -->
+                  <!-- Skill 13 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">Drupal</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/Drupal.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 14 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">Php</h3>
+                    <div class="skills_blob">
+                      <img src="assets/img/skills/PHP.svg" alt="skills image" />
+                    </div>
+                  </div>
+
+                  <!-- Skill 15 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">GraphQL</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/GraphQL.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 16 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">MySQL</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/MySQL.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 17 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">MariaDB</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/MariaDB.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Skill 18 -->
+                  <div class="skills_data">
+                    <h3 class="skills_name">MongoDB</h3>
+                    <div class="skills_blob">
+                      <img
+                        src="assets/img/skills/MongoDB.svg"
+                        alt="skills image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== EDUCATION/WORK ====================-->
+            <div data-content id="educationWork">
+              <!--==================== EDUCATION 1 ====================-->
+              <div class="experience_data grid">
+                <div>
+                  <div class="experience_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2009 - 2014
+                  </div>
+                  <h3 class="experience_title">
+                    B.S. in English and English Education
+                  </h3>
+                  <span class="experience_subtitle"
+                    >The University of Georgia</span
+                  >
+                </div>
+
+                <div>
+                  <span class="experience_rounder"></span>
+                  <span class="experience_line"></span>
+                </div>
+              </div>
+
+              <!--==================== EDUCATION 2 ====================-->
+              <div class="experience_data grid">
+                <div></div>
+
+                <div>
+                  <span class="experience_rounder"></span>
+                  <span class="experience_line"></span>
+                </div>
+                <div>
+                  <div class="experience_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                  <h3 class="experience_title">Full Stack Web Development</h3>
+                  <span class="experience_subtitle"
+                    >The Georgia Institute of Technology</span
+                  >
+                </div>
+              </div>
+
+              <!--==================== WORK 1 ====================-->
+              <div class="experience_data grid">
+                <div>
+                  <div class="experience_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2022
+                  </div>
+                  <h3 class="experience_title">Application Developer</h3>
+                  <span class="experience_subtitle"
+                    >Operation Mobilization</span
+                  >
+                </div>
+
+                <div>
+                  <span class="experience_rounder"></span>
+                  <span class="experience_line"></span>
+                </div>
+              </div>
+
+              <!--==================== WORK 2 ====================-->
+              <div class="experience_data grid">
+                <div></div>
+
+                <div>
+                  <span class="experience_rounder"></span>
+                  <!-- <span class="experience_line"></span> -->
+                </div>
+                <div>
+                  <div class="experience_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022 - Present
+                  </div>
+                  <h3 class="experience_title">Full Stack Developer</h3>
+                  <span class="experience_subtitle">NBC Sports Next</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h1 class="section_title">
+          <span class="section_title_text hide-for-animation">Portfolio</span>
+        </h1>
+
+        <div class="portfolio_container container flex_center">
+          <!-- Project #1 -->
+          <article
+            class="portfolio_card hide-for-animation"
+            data-animation="slide-in-bottom"
+            data-scroll="70"
+          >
+            <img
+              src="assets/img/projects/SportsEngine/background.png"
+              alt="portfolio image"
+              class="portfolio_img"
+            />
+
+            <div class="portfolio_cover">
+              <h2 class="portfolio_title">SportsEngine</h2>
+              <span class="portfolio_subtitle">The Home of Youth Sports.</span>
+
+              <span href="" class="portfolio_button button button_flex"
+                >Learn More <i class="uil uil-external-link-alt"></i
+              ></span>
+            </div>
+          </article>
+          <!-- Project #1 Modal -->
+          <div class="portfolio_modal">
+            <div class="portfolio_modal_content">
+              <span><i class="uil uil-times portfolio_modal_close"></i></span>
+              <img
+                src="assets/img/projects/SportsEngine/homepage.png"
+                alt="Ciphr Project Image"
+                class="portfolio_img_modal img_bright"
+              />
+              <div class="modal_body flex_center">
+                <h3 class="portfolio_modal_title">SportsEngine</h3>
+                <span class="portfolio_modal_text"
+                  >The world's largest directory of youth sports programs with a
+                  growing library of educational articles and videos catered
+                  toward athletes, parents, coaches, club administrators, and
+                  fans.</span
+                >
+                <hr />
+                <span class="portfolio_modal_tech"
+                  >Angular, Drupal, GraphQL, MariaDB</span
+                >
+                <hr />
+              </div>
+              <div class="modal_links">
+                <a
+                  href="https://www.sportsengine.com/"
+                  target="_blank"
+                  class="button_dark button_small"
+                >
+                  <i class="uil uil-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project #2 -->
+          <article
+            class="portfolio_card hide-for-animation"
+            data-animation="slide-in-bottom"
+            data-scroll="70"
+            data-delay="0.2s"
+          >
+            <img
+              src="assets/img/projects/Ciphr/Ciphr.png"
+              alt="portfolio image"
+              class="portfolio_img"
+            />
+
+            <div class="portfolio_cover">
+              <h2 class="portfolio_title">Ciphr</h2>
+              <span class="portfolio_subtitle"
+                >A platform to share and solve coding algorithms.</span
+              >
+
+              <span href="" class="portfolio_button button button_flex"
+                >Learn More <i class="uil uil-external-link-alt"></i
+              ></span>
+            </div>
+          </article>
+          <!-- Project #2 Modal -->
+          <div class="portfolio_modal">
+            <div class="portfolio_modal_content">
+              <i class="uil uil-times portfolio_modal_close"></i>
+              <img
+                src="assets/img/projects/Ciphr/SolutionPage.png"
+                alt="Ciphr Project Image"
+                class="portfolio_img_modal"
+              />
+              <div class="modal_body flex_center">
+                <h3 class="portfolio_modal_title">Ciphr</h3>
+                <span class="portfolio_modal_text"
+                  >A platform that enables developers to connect with each other
+                  in order to strengthen their critical thinking abilities and
+                  problem solving skills.</span
+                >
+                <hr />
+                <span class="portfolio_modal_tech"
+                  >React, Node.js, MongoDB, Express</span
+                >
+                <hr />
+              </div>
+              <div class="modal_links">
+                <a
+                  href="https://github.com/zachdrummond/ciphr"
+                  target="_blank"
+                  class="button_dark button_small"
+                >
+                  <i class="uil uil-github-alt"></i>
+                </a>
+                <a
+                  href="https://ciphr.herokuapp.com/"
+                  target="_blank"
+                  class="button_dark button_small"
+                >
+                  <i class="uil uil-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h1 class="section_title">
+          <span class="section_title_text hide-for-animation">Contact Me</span>
+        </h1>
+
+        <div class="container">
+          <!-- CONTACT FORM -->
+          <form action="" id="contact-form">
+            <div class="contact_group flex_center">
+              <!-- NAME -->
+              <div class="contact_box">
+                <input
+                  id="name"
+                  type="text"
+                  name="user_name"
+                  class="contact_input hide-for-animation"
+                  placeholder="Name"
+                  required
+                />
+                <label for="name" class="contact_label">Name</label>
+              </div>
+
+              <div class="contact_box">
+                <input
+                  id="email"
+                  type="email"
+                  name="user_email"
+                  class="contact_input hide-for-animation"
+                  placeholder="Email Address"
+                  required
+                />
+                <label for="email" class="contact_label">Email Address</label>
+              </div>
+
+              <div class="contact_box contact_area">
+                <textarea
+                  name="user_message"
+                  id="message"
+                  class="contact_input hide-for-animation"
+                  data-delay="0.2s"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <label for="message" class="contact_label">Message</label>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <div id="submitBtn">
+                <button
+                  type="submit"
+                  class="contact_button button button_flex hide-for-animation"
+                  data-scroll="90"
+                >
+                  <i class="uil uil-message button_icon_with_text"></i> Send
+                  Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer_bg">
+        <div class="footer_container">
+          <h1 class="footer_title">Zach Drummond</h1>
+          <p class="footer_copy">
+            <span id="date"></span> | &#169; All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--==================== SOCIAL MEDIA ====================-->
+
+    <div class="social_links_container">
+      <ul class="social_links_list">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/zachdrummond/"
+            target="_blank"
+            class="social_link"
+          >
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/zachdrummond"
+            target="_blank"
+            class="social_link"
+          >
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scroll_to_top button_dark" id="scroll-to-top">
+      <i class="uil uil-arrow-up button_icon"></i>
+    </a>
+
+    <!--==================== JAVASCRIPT ====================-->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </body>
+</html>
