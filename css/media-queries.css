@@ -19,7 +19,6 @@
     --img-brightness: brightness(80%);
     --job-link-color: var(--ultramarine-color-500);
     --contact-input-color: var(--ultramarine-color-900);
-    --social_links_color: var(--ultramarine-color-100);
     --scroll-bar-color: var(--gray-color-700);
     --scroll-thumb-color: var(--gray-color-800);
   }
@@ -128,10 +127,6 @@
 
   #home_intro {
     display: inline-block;
-  }
-
-  .social_links_container {
-    display: block;
   }
 }
 
