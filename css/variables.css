@@ -41,8 +41,6 @@
     --ultramarine-color-base: var(--ultramarine-color-600);
     --ultramarine-color-second: var(--ultramarine-color-600);
     --crimsonSky-color-base: var(--crimsonSky-color-500);
-    --indigo-color-base: var(--indigo-color-500);
-    --lightBlue-color-base: var(--lightBlue-color-500);
     --gray-color-base: var(--gray-color-500);
     
     --nav-color: var(--ultramarine-color-100);
@@ -56,7 +54,6 @@
     --hover-color-ultramarine: var(--ultramarine-color-500);
     --hover-color-crimsonSky: var(--crimsonSky-color-base);
     --img-brightness: brightness(1);
-    --job-link-color: var(--ultramarine-color-base);
     --contact-input-color: var(--ultramarine-color-100);
     --scroll-bar-color: var(--gray-color-200);
     --scroll-thumb-color: var(--gray-color-300);
